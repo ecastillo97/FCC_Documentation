@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Electrolize', monospace;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 200px;
+}
+nav header{
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 20px 0px 0px 20px;
+}
+#main-doc{
+    display: flex;
+    justify-content: center;
+}
+#navbar ul{
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+}
+#navbar-ul li{
+    margin: 20px auto;
+    padding: 0px 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+}
+#container{
+    position: absolute;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    padding: 20px;
+    max-width: 1366px;
+}
+section header{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+article header{
+    font-size: 1.1rem;
+    color: rgb(102, 102, 102);
+    padding: 20px 0px 10px 0px;
+}
+code, p{
+    padding: 5px 0px;
+}
+code{
+    display: block;
+    text-align: left;
+    word-break: normal;
+    background: rgb(224, 224, 224);
+    white-space: pre-wrap;
+    padding: 15px;
+    border-radius: 5px;
+}
+ul{
+    padding-left: 20px;
+}
+ul li{
+    padding: 5px 0px 0px 10px;
+}
+#reserved_word_list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#reserved_word_list li{
+    list-style: none;
+    border: 1px solid rgb(189, 189, 189);
+    text-align: center;
+}
+@media (max-width: 520px){
+    #navbar{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        max-width: inherit;
+    }
+    nav header {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 10px 0px;
+    }
+    #container{
+        margin: 0px auto;
+    }
+}
